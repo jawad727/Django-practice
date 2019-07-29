@@ -6,4 +6,4 @@ class LeadSerializer(serializers.ModelSerializer):
         model = Lead
         fields = "__all__"
 
-# asd
+# asdh
