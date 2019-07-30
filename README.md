@@ -56,3 +56,49 @@ static = Compiled js - webpack takes react app, looks at it and compiles it to m
 6. next run: npm i -D webpack webpack-cli
 7. npm i -D @babel/core babel-loader @babel/preset-env @babel/preset-react babel-plugin-transform-class-properties
 8. npm i react react-dom prop-types
+
+---- Other Django Tutorial ----
+
+SETTINGS:
+
+INSTALLED_APPS: if you add a folder name to installed apps you can acess a fil by doing foldername.\_\_\_
+
+Steps:
+
+1. python manage.py migrate
+2. python manage.py createsuperuser
+3. python manage.py runserver
+4. Once models are created run: python manage.py makemigrations
+
+FOREIGN KEYS explination 29 mins into video
+
+Notes:
+
+- by default django makes everything not nullable, so to combat that use blank-True and null=True (51 mins)
+
+- djangorestframework add above custom apps in INSTALLED_APPS
+
+---
+
+provided:
+{
+"room_id": "?",
+"title": "Shop",
+"description": "You are standing in a shop. You can sell your treasure here.",
+"coordinates": "?",
+"players": [],
+"items": [],
+"exits": ["e"],
+"cooldown": 2.0,
+"errors": [],
+"messages": ["I'll give you 100 gold for that Small Treasure.", "(include 'confirm':'yes' to sell Small Treasure)"]
+}
+
+our storage:
+
+{
+team_score: 0,
+messages: [],
+map: {0: {n: ?, e:?, w:?, s:?}, - 499},
+teammate_location: {player_1: 0, player_2: 0, player_3: 0, player_4: 0},
+}
